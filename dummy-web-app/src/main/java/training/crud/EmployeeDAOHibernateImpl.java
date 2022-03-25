@@ -1,4 +1,4 @@
-package training.crud.dao;
+package training.crud;
 
 import java.util.List;
 
@@ -8,8 +8,6 @@ import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import training.crud.entity.Employee;
 
 @Repository
 public class EmployeeDAOHibernateImpl implements EmployeeDAO {

@@ -1,4 +1,4 @@
-package training.crud.entity;
+package training.crud.datarest;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,8 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "employee")
-public class Employee {
+@Table(name = "person")
+public class Person {
+
+  // define fields
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,11 +29,11 @@ public class Employee {
 
   // define constructors
 
-  public Employee() {
+  public Person() {
 
   }
 
-  public Employee(String firstName, String lastName, String email) {
+  public Person(String firstName, String lastName, String email) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;

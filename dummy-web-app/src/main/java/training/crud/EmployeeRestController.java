@@ -1,4 +1,4 @@
-package training.crud.rest;
+package training.crud;
 
 import java.util.List;
 
@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import training.crud.entity.Employee;
-import training.crud.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api")
